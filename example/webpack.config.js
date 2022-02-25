@@ -30,7 +30,7 @@ module.exports = {
           {
             loader: path.resolve(__dirname, '../lib/index.js'),
             options: {
-              locales: ['en']
+              locales: ['en', 'ja']
             }
           }
         ]
