@@ -26,7 +26,14 @@ module.exports = {
       {
         resourceQuery: /blockType=i18n/,
         type: 'javascript/auto',
-        use: [path.resolve(__dirname, '../lib/index.js')]
+        use: [
+          {
+            loader: path.resolve(__dirname, '../lib/index.js'),
+            options: {
+              locales: ['en']
+            }
+          }
+        ]
       }
     ]
   },
